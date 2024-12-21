@@ -19,7 +19,7 @@ import javax.sql.DataSource;
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(
-        basePackages = "com.task.tasktest.repository", // Repository package for dbA
+        basePackages = "com.task.tasktest.repository.dbA", // Repository package for dbA
         entityManagerFactoryRef = "dbAEntityManagerFactory",
         transactionManagerRef = "dbATransactionManager"
 )
